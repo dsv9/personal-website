@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 /*content*/
 h1,
@@ -37,11 +38,11 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ul {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -55,9 +56,9 @@ a:hover {
 }
 
 .logo {
-  height: 2em;
+  height: 2.5em;
   vertical-align: middle;
-  border-radius: 10%;
+  border-radius: 7%;
   pointer-events: none;
 }
 
@@ -285,8 +286,168 @@ img.logo15 {
   pointer-events: none;
 }
 
+img.logo16 {
+  width: 16px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  pointer-events: none;
+}
+
+img.logo17 {
+  width: 16px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  pointer-events: none;
+}
+
+img.logo18 {
+  width: 16px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  pointer-events: none;
+}
+
+img.logo19 {
+  width: 16px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  pointer-events: none;
+}
+
 /*footer*/
 
 p.footer {
   font-size: 13px;
 }
+
+/**
+ * Tabs
+ */
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #000000;
+  font-weight: bold;
+  color: white;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+  
+}
+.tabs input[type="radio"] {
+	display: none;
+  
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+  color: #000000;
+
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+  
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/* tabset CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible + label {
+  outline: 2px solid rgba(0,102,204,1);
+  border-radius: 3px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+  color: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.tabset > input:checked + label {
+  border-color: #000000;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #000000;
+}
+
