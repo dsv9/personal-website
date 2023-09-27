@@ -1,9 +1,9 @@
-@media (min-width: 512px) {
+
+@media (min-width: 320px) {
   :root {
     --scale: 1;
   }
 }
-
 
 html {
   background-color: hsl(0, 0%, 100%);
@@ -92,14 +92,14 @@ p.introduction {
 }
 
 /*links section*/
-/*p.links {
+p.links {
   font-size: 30px;
   background-color: #f7f7f788;
   border-radius: 15px;
   padding-left:32px;
   text-decoration: none;
   transition: filter 0.3s ease-in-out;
-}*/
+}
 
 a.github {
   color:#000000;
