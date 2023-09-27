@@ -91,15 +91,15 @@ p.introduction {
   opacity: 0.7;
 }
 
-/*links section*/
-p.links {
+/*socials section extra styling*/
+/*p.links {
   font-size: 30px;
   background-color: #f7f7f788;
   border-radius: 15px;
   padding-left:32px;
   text-decoration: none;
   transition: filter 0.3s ease-in-out;
-}
+}*/
 
 a.github {
   color:#000000;
@@ -130,19 +130,6 @@ img.email {
 }
 
 
-/*curiosity quote*/
-code {
-  font-family: inherit;
-  font-size: 16px;
-  color: white;
-  transition: filter 0.3s ease-in-out;
-}
-
-code:hover {
-  /*filter: brightness(0.8);*/
-  color: #ffffff;
-  background-color: #000000;
-}
 
 p > code,
 li > code,
@@ -154,7 +141,6 @@ td > code {
   box-decoration-break: clone;
   /*padding: .1rem .3rem .2rem;*/
   border-radius: .2rem;
-  
 }
 
 /*company logos*/
@@ -312,6 +298,14 @@ img.logo19 {
   pointer-events: none;
 }
 
+img.logo20 {
+  height: 14px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  pointer-events: none;
+}
+
 /*footer*/
 
 p.footer {
@@ -392,7 +386,7 @@ p.footer {
 }
 
 /*
- Styling
+ Tabs Styling
 */
 
 
@@ -445,3 +439,41 @@ input:focus-visible + label {
   border-top: 1px solid #000000;
 }
 
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: -10px auto;
+  padding: 0px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 1px solid rgb(163, 163, 163);
+  margin-left: 26px;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 5px 20px;
+  padding: 0x;
+  border-radius: px;
+  font-size: 14px;
+  
+}
+
+/* Timeline dot  */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 999px;
+  left: -23px;
+  top: 7px;
+}
+
+.timeline-text {
+  font-size: 14px;
+}
