@@ -1,8 +1,3 @@
-@import url("https://use.typekit.net/mdd1zus.css");
-:root {
-  --scale: calc(1 / 2);
-}
-
 @media (min-width: 512px) {
   :root {
     --scale: 1;
@@ -14,7 +9,7 @@ html {
   background-color: hsl(0, 0%, 100%);
   color: #1a202c;
   -webkit-font-smoothing: antialiased;
-  font-family: neue-haas-grotesk-text, sans-serif;
+  font-family: 'Overused Grotesk', sans-serif;                                              
   line-height: 1.5;
   font-weight: 400;
 }
@@ -97,14 +92,14 @@ p.introduction {
 }
 
 /*links section*/
-p.links {
+/*p.links {
   font-size: 30px;
   background-color: #f7f7f788;
   border-radius: 15px;
   padding-left:32px;
   text-decoration: none;
   transition: filter 0.3s ease-in-out;
-}
+}*/
 
 a.github {
   color:#000000;
@@ -116,7 +111,6 @@ a.linkedin {
 
 a.goodreads {
   background:linear-gradient(120DEG,#553B08,#c5bdbd);
-  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
