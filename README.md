@@ -1,6 +1,6 @@
 # Personal Website
 
-See it in [action](https://danv.me),
+See it in [action](https://danv.me).
 
 - Inspired by [r3nanp's](https://github.com/r3nanp/me) own personal website.
 - HTML & CSS only.
