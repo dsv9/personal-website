@@ -100,9 +100,9 @@ a.linkedin {
 }
 
 a.goodreads {
-  background:linear-gradient(120DEG,#553B08,#c5bdbd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #553B08;
+  display: inline-block;
+  transition: opacity 0.3s ease-in-out;
 }
 
 a.unsplash {
@@ -470,8 +470,8 @@ input:focus-visible + label {
 }
 
 .fa-goodreads {
-  display: inline-block !important;
-  font: normal normal normal 14px/1 FontAwesome !important;
+  display: inline-block;
+  font-family: "Font Awesome 6 Brands" !important;
 }
 
 .tabset {
