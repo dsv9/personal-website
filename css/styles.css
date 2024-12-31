@@ -468,3 +468,12 @@ input:focus-visible + label {
 .timeline-text {
   font-size: 14px;
 }
+
+.fa-goodreads {
+  display: inline-block !important;
+  font: normal normal normal 14px/1 FontAwesome !important;
+}
+
+.tabset {
+  min-height: 400px;
+}
