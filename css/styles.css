@@ -477,3 +477,18 @@ input:focus-visible + label {
 .tabset {
   min-height: 400px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Add padding to prevent content from being hidden behind footer */
+main {
+  padding-bottom: 50px;
+}
